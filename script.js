@@ -1,0 +1,1 @@
+document.querySelectorAll('.card').forEach((c,i)=>{c.style.opacity=0;setTimeout(()=>{c.style.transition='1s';c.style.opacity=1;},i*200)});
