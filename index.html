@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ITEMVERSE | Jasa SMM Indonesia</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
 
@@ -20,7 +21,7 @@
 <header>
 
 <div class="logo">
-<img src="logo.png" alt="ITEMVERSE">
+<img src="img/logo.png" alt="ITEMVERSE">
 <h2>ITEMVERSE</h2>
 </div>
 
@@ -41,6 +42,10 @@
 </header>
 
 <section class="hero">
+<div class="server-status">
+  <span class="dot"></span>
+  Server Status: <b>Online</b> • 128 order diproses
+</div>
 
 <div class="hero-text">
 
@@ -70,8 +75,67 @@ Layanan Followers, Likes, Views, Komentar, Subscriber, dan berbagai kebutuhan so
 
 </section>
 
-<section id="layanan">
 
+<section id="layanan" class="services-section">
+  <h2 class="title">Layanan Sosial Media</h2>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <div class="service-header">
+        <span>📸</span>
+        <h3>Instagram</h3>
+      </div>
+      <ul>
+        <li>Followers Indonesia</li>
+        <li>Followers Global</li>
+        <li>Likes Indonesia</li>
+        <li>Views Reels</li>
+        <li>Komentar Indonesia</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-header">
+        <span>🎵</span>
+        <h3>TikTok</h3>
+      </div>
+      <ul>
+        <li>Followers</li>
+        <li>Likes</li>
+        <li>Views</li>
+        <li>Share</li>
+        <li>Save</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-header">
+        <span>▶️</span>
+        <h3>YouTube</h3>
+      </div>
+      <ul>
+        <li>Subscriber</li>
+        <li>Views</li>
+        <li>Watch Time</li>
+        <li>Likes</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-header">
+        <span>📘</span>
+        <h3>Facebook</h3>
+      </div>
+      <ul>
+        <li>Followers</li>
+        <li>Page Likes</li>
+        <li>Post Likes</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 <h2 class="title">Layanan Kami</h2>
 
 <div class="services">
@@ -102,39 +166,82 @@ Layanan Followers, Likes, Views, Komentar, Subscriber, dan berbagai kebutuhan so
 
 </div>
 
+<section class="stats">
+  <div class="stat">
+    <h3>50K+</h3>
+    <p>Order Selesai</p>
+  </div>
+  <div class="stat">
+    <h3>8K+</h3>
+    <p>Customer</p>
+  </div>
+  <div class="stat">
+    <h3>99%</h3>
+    <p>Pelanggan Puas</p>
+  </div>
 </section>
 
-<section id="harga">
+<section id="harga" class="pricing-section">
+  <h2 class="title">Price List Instagram</h2>
 
-<h2 class="title">Price List</h2>
+  <div class="pricing-grid">
 
-<div class="price-box">
+    <div class="pricing-card">
+      <h3>100 Followers</h3>
+      <div class="price">Rp10.000</div>
+    </div>
 
-<div class="price-card">
-<h3>Instagram Followers</h3>
+    <div class="pricing-card">
+      <h3>250 Followers</h3>
+      <div class="price">Rp22.000</div>
+    </div>
 
-<ul>
+    <div class="pricing-card">
+      <h3>500 Followers</h3>
+      <div class="price">Rp36.000</div>
+    </div>
 
-<li>100 Followers - Rp10.000</li>
+    <div class="pricing-card">
+      <h3>1000 Followers</h3>
+      <div class="price">Rp60.000</div>
+    </div>
 
-<li>250 Followers - Rp22.000</li>
+    <div class="pricing-card">
+      <h3>2000 Followers</h3>
+      <div class="price">Rp110.000</div>
+    </div>
 
-<li>500 Followers - Rp36.000</li>
+    <div class="pricing-card">
+      <h3>5000 Followers</h3>
+      <div class="price">Rp280.000</div>
+    </div>
 
-<li>1000 Followers - Rp60.000</li>
-
-<li>2000 Followers - Rp110.000</li>
-
-<li>5000 Followers - Rp280.000</li>
-
-</ul>
-
-</div>
-
-</div>
-
+  </div>
 </section>
+<section id="order">
+    <h2 class="title">Form Order</h2>
 
+    <div class="order-box">
+        <input type="text" id="nama" placeholder="Nama Anda">
+<select id="layanan">
+    <option value="Instagram Followers">Instagram Followers</option>
+    <option value="Instagram Likes">Instagram Likes</option>
+    <option value="TikTok Followers">TikTok Followers</option>
+    <option value="TikTok Likes">TikTok Likes</option>
+    <option value="Views">Views</option>
+    <option value="Komentar">Komentar</option>
+    <option value="Subscriber">Subscriber</option>
+</select>
+
+        <input type="text" id="target" placeholder="Username / Link akun">
+
+        <input type="number" id="jumlah" placeholder="Jumlah pesanan">
+
+        <button onclick="kirimOrder()" class="btn-order">
+            Kirim Order via WhatsApp
+        </button>
+    </div>
+</section>
 <section id="faq">
 
 <h2 class="title">FAQ</h2>
@@ -157,19 +264,74 @@ Layanan Followers, Likes, Views, Komentar, Subscriber, dan berbagai kebutuhan so
 
 </section>
 
-<footer id="kontak">
+<footer id="kontak" class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h2>ITEMVERSE</h2>
+      <p>
+        Layanan SMM Indonesia terpercaya untuk kebutuhan Followers, Likes,
+        Views, Komentar, dan berbagai layanan sosial media lainnya.
+      </p>
+    </div>
 
-<h2>ITEMVERSE</h2>
+    <div class="footer-links">
+      <h3>Menu</h3>
+      <a href="#">Home</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#harga">Harga</a>
+      <a href="#faq">FAQ</a>
+    </div>
 
-<p>WhatsApp : 087785080652</p>
+    <div class="footer-contact">
+      <h3>Kontak</h3>
+      <p>📱 087785080652</p>
+      <p>✈️ @yogagarc1a</p>
+    </div>
+  </div>
 
-<p>Telegram : @yogagarc1a</p>
-
-<p>©2026 ITEMVERSE. All Rights Reserved.</p>
-
+  <div class="footer-bottom">
+    © 2026 ITEMVERSE — All Rights Reserved.
+  </div>
 </footer>
 
-<script src="script.js"></script>
+    <div class="testimonial-slider">
+        <div class="testimonial-track">
 
+            <div class="testimonial-card">
+                <p>"Order followers masuk cepat, admin ramah banget!"</p>
+                <h4>— Rafi, Jakarta</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Harga murah dan followers masih aman sampai sekarang."</p>
+                <h4>— Nabila, Bandung</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Komentarnya bisa custom dan hasilnya real akun Indonesia."</p>
+                <h4>— Andi, Medan</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <p>"Sudah langganan beberapa kali, selalu puas sama ITEMVERSE."</p>
+                <h4>— Sinta, Surabaya</h4>
+            </div>
+
+        </div>
+    </div>
+</section>
+</>
+
+<script src="script.js"></script>
+<<a href="https://wa.me/6287785080652" class="wa-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://t.me/yogagarc1a" class="tg-float" target="_blank">
+    <i class="fab fa-telegram-plane"></i>
+</a>
+</a>
+</a>
+<button id="topBtn" class="top-btn">↑</button>
+<script src="script.js"></script>
 </body>
-</html>
+</html> 
